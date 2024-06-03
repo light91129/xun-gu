@@ -1,0 +1,19 @@
+count = 0
+total = 0
+passc = 0
+failc = 0
+while True:
+  score = int(input("請輸入成績：(輸入-1結束): "))
+  if score == -1:
+    break
+  total += score
+  count += 1
+  if score >= 60:
+    passc += 1
+  else:
+    failc += 16
+  avr = total / count
+print("全班人數:",count)
+print("及格人數:",passc)
+print("不及格人數:",failc)
+print("全班平均值:",avr)
